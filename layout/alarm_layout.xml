@@ -1,0 +1,186 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/backcolor"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:id="@+id/sleep_select_alarm"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="90dp"
+            android:orientation="horizontal">
+
+            <cn.edu.hebtu.software.peace.views.CalendarView
+                android:id="@+id/sleep_alarm_hour"
+                android:layout_width="0dp"
+                android:layout_height="150dp"
+                android:layout_marginLeft="120dp"
+                android:layout_weight="1" />
+
+            <TextView
+                android:layout_width="4dp"
+                android:layout_height="150dp"
+                android:gravity="center"
+                android:text=":"
+                android:textColor="#000000"
+                android:textSize="26dp" />
+
+            <cn.edu.hebtu.software.peace.views.CalendarView
+                android:id="@+id/sleep_alarm_minute"
+                android:layout_width="0dp"
+                android:layout_height="150dp"
+                android:layout_marginRight="120dp"
+                android:layout_weight="1" />
+        </LinearLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_marginTop="100dp"
+        android:layout_gravity="center"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+        <!--<include layout="@layout/four_card_layout" />-->
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+            <LinearLayout
+                android:layout_marginRight="20dp"
+                android:background="@drawable/bt_shape5"
+                android:id="@+id/alarm_clock_select"
+                android:orientation="vertical"
+                android:layout_width="160dp"
+                android:layout_height="120dp">
+                <ImageView
+                    android:layout_marginTop="20dp"
+                    android:layout_marginLeft="20dp"
+                    android:src="@drawable/smallbell"
+                    android:layout_width="20dp"
+                    android:layout_height="20dp" />
+                <TextView
+                    android:layout_marginTop="10dp"
+                    android:layout_marginLeft="20dp"
+                    android:textSize="20dp"
+                    android:textColor="#ffffff"
+                    android:text="闹钟铃声"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content" />
+                <TextView
+                    android:layout_marginTop="5dp"
+                    android:layout_marginLeft="20dp"
+                    android:id="@+id/first_card_alarm"
+                    android:textColor="#ffffff"
+                    android:text="晨诗"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content" />
+            </LinearLayout>
+                <LinearLayout
+                    android:background="@drawable/bt_shape5"
+                    android:id="@+id/awaken_clock_select"
+                    android:layout_width="160dp"
+                    android:orientation="vertical"
+                    android:layout_height="120dp">
+                    <ImageView
+                        android:layout_marginTop="20dp"
+                        android:layout_marginLeft="20dp"
+                        android:src="@drawable/sunup"
+                        android:layout_width="20dp"
+                        android:layout_height="20dp" />
+                    <TextView
+                        android:layout_marginTop="10dp"
+                        android:layout_marginLeft="20dp"
+                        android:textSize="20dp"
+                        android:textColor="#ffffff"
+                        android:text="轻唤醒"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content" />
+                    <TextView
+                        android:id="@+id/two_card_wakeup"
+                        android:layout_marginTop="5dp"
+                        android:layout_marginLeft="20dp"
+                        android:textColor="#ffffff"
+                        android:text="关闭"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content" />
+
+                </LinearLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+                <LinearLayout
+                    android:layout_marginTop="20dp"
+                    android:layout_marginRight="20dp"
+                    android:background="@drawable/bt_shape5"
+                    android:id="@+id/getup_challage"
+                    android:layout_width="160dp"
+                    android:orientation="vertical"
+                    android:layout_height="120dp">
+                    <ImageView
+                        android:layout_marginTop="20dp"
+                        android:layout_marginLeft="20dp"
+                        android:src="@drawable/lightning"
+                        android:layout_width="20dp"
+                        android:layout_height="20dp" />
+                    <TextView
+                        android:layout_marginTop="10dp"
+                        android:layout_marginLeft="20dp"
+                        android:textSize="20dp"
+                        android:textColor="#ffffff"
+                        android:text="起床挑战"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content" />
+                    <TextView
+                        android:id="@+id/tv_three_card_text"
+                        android:layout_marginTop="5dp"
+                        android:layout_marginLeft="20dp"
+                        android:textColor="#ffffff"
+                        android:text="无任务"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content" />
+
+                </LinearLayout>
+                <LinearLayout
+                    android:layout_marginTop="20dp"
+                    android:background="@drawable/bt_shape5"
+                    android:id="@+id/sleep_reminder_select"
+                    android:layout_width="160dp"
+                    android:orientation="vertical"
+                    android:layout_height="120dp">
+                    <ImageView
+                        android:layout_marginTop="20dp"
+                        android:layout_marginLeft="20dp"
+                        android:src="@drawable/moon"
+                        android:layout_width="20dp"
+                        android:layout_height="20dp" />
+                    <TextView
+                        android:layout_marginTop="10dp"
+                        android:layout_marginLeft="20dp"
+                        android:textSize="20dp"
+                        android:textColor="#ffffff"
+                        android:text="就寝提醒"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content" />
+                    <TextView
+                        android:id="@+id/four_card_jiuqitixing"
+                        android:layout_marginTop="5dp"
+                        android:layout_marginLeft="20dp"
+                        android:textColor="#ffffff"
+                        android:text="关闭"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content" />
+            </LinearLayout>
+            </LinearLayout>
+        </LinearLayout>
+    </LinearLayout>
+

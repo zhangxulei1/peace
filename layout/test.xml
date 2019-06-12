@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@drawable/backcolor">
+    <TextView
+        android:id="@+id/text"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="请摇晃手机"
+        android:textSize="30dp"
+        android:gravity="center"
+        android:layout_marginTop="100dp"
+        android:textColor="#ffffff"/>
+    <ImageView
+        android:id="@+id/shakePhone"
+        android:layout_width="match_parent"
+        android:layout_height="150dp"
+        android:src="@mipmap/shake12"
+        android:layout_marginTop="40dp"/>
+    <TextView
+        android:id="@+id/shakeTimes"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:text="70"
+        android:textColor="#ffffff"
+        android:gravity="center"
+        android:textSize="28dp"
+        />
+    <Button
+        android:id="@+id/exit"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="退出"
+        android:background="@drawable/notice_pause"
+        android:textColor="#ffffff"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="80dp"
+        android:visibility="gone"/>
+
+
+</LinearLayout>
